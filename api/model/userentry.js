@@ -27,6 +27,7 @@ exports.insert_update_user = (req, res) => {
                         } else {
                             resolve(req.body.otp);
                         }
+                     conn.destroy();
                     })
                 }
             })

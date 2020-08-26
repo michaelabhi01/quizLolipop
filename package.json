@@ -1,0 +1,23 @@
+{
+    "name": "quizproject",
+    "version": "1.0.0",
+    "private": true,
+    "description": "Questions and answers quiz",
+    "main": "app.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "nodemon app.js"
+    },
+    "author": "Abhishek Singh",
+    "license": "ISC",
+    "dependencies": {
+        "body-parser": "^1.19.0",
+        "cookie-parser": "^1.4.5",
+        "cors": "^2.8.5",
+        "express": "^4.17.1",
+        "mysql": "^2.18.1",
+        "node": "^14.8.0",
+        "nodemon": "^2.0.4",
+        "promise-mysql": "^4.1.3"
+    }
+}

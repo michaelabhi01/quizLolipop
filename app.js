@@ -22,9 +22,9 @@ app.all("/*", function(req, res, next) {
     next();
 });
 
+const informationRoutes = require('./api/routes/information');
 const loginRoutes = require('./api/routes/login');
 
+
+app.use('/', informationRoutes);
 app.use('/login', loginRoutes);
-app.use('/', function(req,res){
-        res.send("quiz_lolipop WS/APIs");
-});

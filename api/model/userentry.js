@@ -28,7 +28,7 @@ exports.insert_update_user = (req, res) => {
                             resolve(req.body.otp);
                         }
                         conn.destroy();
-                    });
+                    })
                 }
             })
         })

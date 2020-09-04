@@ -24,7 +24,9 @@ app.all("/*", function(req, res, next) {
 
 const informationRoutes = require('./api/routes/information');
 const loginRoutes = require('./api/routes/login');
+const editprofileRoutes = require('./api/routes/editprofile');
 
 
 app.use('/', informationRoutes);
 app.use('/login', loginRoutes);
+app.use('/editprofile', editprofileRoutes);
